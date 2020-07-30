@@ -6,7 +6,7 @@ Clone or download the git repo into your folder
 
 
 ## Usage of the javascript files
-In your project look for the next folder ```src/js/modules/``` and add the next to files:
+In your project look for the next folder ```src/js/modules/``` and add the next files:
 ```firsVisit.js``` and ```transition.js```
 
 In your project look for this folder ```src/js/index.js/``` and add the following code in the ```index.js```
