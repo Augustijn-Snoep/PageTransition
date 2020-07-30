@@ -1,0 +1,47 @@
+.header {
+    height: 120px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 799;
+
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__list {
+        width: fit-content;
+        margin-left: auto;
+
+        li {
+            display: inline-block;
+            margin-right: 16px;
+
+            a {
+                color: $color-dark-green;
+                text-transform: capitalize;
+                font-style: italic;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &--sticky {
+        background: $color-dark-green;
+        transition: all .3s;
+        height: 40px;
+
+        .header__list {
+            li {
+                a {
+                    color: $color-green;
+                }
+            }
+        }
+    }
+}

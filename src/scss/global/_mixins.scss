@@ -1,0 +1,42 @@
+@mixin reset-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  text-align: left;
+}
+
+@mixin link {
+  text-decoration: none;
+  transition: all .3s;
+  display: inline-block;
+  padding: 15px 80px 15px 25px;
+  line-height: 1;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin image-full {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@mixin mobile-grid {
+  width: 100%;
+  grid-template-columns: 1fr !important;
+}
