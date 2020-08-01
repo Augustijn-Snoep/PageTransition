@@ -32,7 +32,7 @@ In your ```index``` page place the following classname ```page--home``` to your 
 ```pageTransition
 <div class="page--home__transition"></div>
 
-<div class="transition shrink">
+<div class="transition moveout">
     <div class="transition__bg">
         <div class="transition__title">
             <h1>
@@ -46,7 +46,7 @@ In your ```index``` page place the following classname ```page--home``` to your 
 ## Setup of the other pages
 In the other ```page templates``` place the following classname ```page--'the-page-name'``` to your body like ```<body class="page--'the-page-name'">``` and place the code what u see under this paragraph between the ```<body>``` and ```<main>```
 ```pageTransition
-<div class="transition shrink">
+<div class="transition moveout">
     <div class="transition__bg">
         <div class="transition__title">
             <h1>
