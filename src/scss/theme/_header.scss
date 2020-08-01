@@ -20,27 +20,11 @@
             margin-right: 16px;
 
             a {
-                color: $color-dark-green;
-                text-transform: capitalize;
-                font-style: italic;
+                color: $color-blue
             }
 
             &:last-child {
                 margin-right: 0;
-            }
-        }
-    }
-
-    &--sticky {
-        background: $color-dark-green;
-        transition: all .3s;
-        height: 40px;
-
-        .header__list {
-            li {
-                a {
-                    color: $color-green;
-                }
             }
         }
     }

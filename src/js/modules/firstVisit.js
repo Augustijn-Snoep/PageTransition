@@ -12,6 +12,11 @@ const firstVisit = () => {
             }, 2000);
 
             setTimeout(function() {
+                const firstLoadTitle = document.querySelector('.page--home__transition--title');
+                firstLoadTitle.classList.add('show-title')
+            }, 1000);
+
+            setTimeout(function() {
                 const firstLoad = document.querySelector('.page--home__transition--remove')
                 firstLoad.parentNode.removeChild(firstLoad);
             },3000);

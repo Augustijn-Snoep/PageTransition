@@ -4,12 +4,12 @@ const transition = () => {
 
     function transitionTitle() {
         const title = document.querySelector('.transition__title');
-        title.classList.add('transition__title--is-showing');
+        // title.classList.add('transition__title--is-showing');
     }
 
     function pageTransition() {
-        overlay.classList.remove('shrink');
-        overlay.classList.add('grow');
+        overlay.classList.remove('moveout');
+        overlay.classList.add('movein');
     }
 
     function transitionController(e) {

@@ -27,11 +27,25 @@ Now the ```/src/scss/components/_all.scss``` should look like:
 @import '_page-transition';
 ```
 
-## Setup of your pages
+## Setup of home page
 In your ```index``` page place the following classname ```page--home``` to your body like ```<body class="page--home">``` and place the code what u see under this paragraph between the ```<body>``` and ```<main>```
 ```pageTransition
 <div class="page--home__transition"></div>
 
+<div class="transition shrink">
+    <div class="transition__bg">
+        <div class="transition__title">
+            <h1>
+                Some text
+            </h1>
+        </div>
+    </div>
+</div>
+```
+
+## Setup of the other pages
+In the other ```page templates``` place the following classname ```page--'the-page-name'``` to your body like ```<body class="page--'the-page-name'">``` and place the code what u see under this paragraph between the ```<body>``` and ```<main>```
+```pageTransition
 <div class="transition shrink">
     <div class="transition__bg">
         <div class="transition__title">

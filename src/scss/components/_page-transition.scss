@@ -17,26 +17,21 @@
     }
 
     &__bg {
-        background-color: $color-black;
+        background-color: $color-blue;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    &__title {
-        color: $color-dark-green;
-        opacity: 0;
+    &.moveout .transition__bg {
+        animation: swipeOutOverlay 0.3s 0s 1 normal both ease-in-out;
     }
 
-    &.shrink .transition__bg {
-        animation: swipeOutOverlay 0.7s 0s 1 normal both ease-in-out;
+    &.movein .transition__bg {
+        animation: swipeInOverlay 0.3s 0s 1 normal both ease-in-out;
     }
 
-    &.grow .transition__bg {
-        animation: swipeInOverlay 0.7s 0s 1 normal both ease-in-out;
-    }
-
-    &.shrink {
+    &.moveout {
         .transition__bg {
             &:before {
                 transform: scaleX(0);
@@ -44,7 +39,7 @@
         }
     }
 
-    &.grow {
+    &.movein {
         .transition__bg {
             &:before {
                 animation: swipeInOverlayBreak 0.5s 0s 1 normal both ease-in-out;
@@ -57,14 +52,30 @@
 .page {
     &--home {
 		&__transition {
-			background-color: $color-dark-green;
+			background-color: $color-blue;
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100vw;
 			height: 100vh;
 			z-index: 999;
-			transition: all .3s;
+            transition: all 1s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &--title {
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s;
+                color: $color-white;
+                font-size: 30px;
+
+                &.show-title {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
 
 			&--remove {
 				pointer-events: none;

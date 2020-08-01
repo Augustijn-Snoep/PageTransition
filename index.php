@@ -10,7 +10,13 @@
     </head>
     <body class="page--home">
 
-        <div class="page--home__transition"></div>
+        <div class="page--home__transition">
+            <div class="page--home__transition--title">
+                <h1>
+                    some text
+                </h1>
+            </div>
+        </div>
     
         <?php include('./components/transition.php'); ?>
         <?php include('./components/header.php'); ?>
